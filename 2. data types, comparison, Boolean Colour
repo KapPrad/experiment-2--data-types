@@ -1,0 +1,92 @@
+//1.
+/*PRN:22070123082
+#Display of different Data Types#                  */
+#include<iostream>
+using namespace std;
+int main()
+{
+    int MyintVar = 10;
+    float MyfloatVar = 10.5;
+    double a = 10.56;
+    const char* str_const = "Ae vedya" ;
+    string c = "bat ka grip";
+    bool MyBoolVar = 1;
+    //writing the the size used by every variable after stating it 
+    cout<<"Integer value :"<<MyintVar<<endl;
+    cout<<"the size of the integer is: "<<endl<<sizeof(MyintVar)<<endl;
+    cout<<"Float Value is :"<<MyfloatVar<<endl<<sizeof(MyfloatVar)<<endl;
+    cout<<"Double value is :"<<a<<endl<<sizeof(a)<<endl;
+    cout<<"Char is :"<<str_const<<endl<<sizeof(str_const)<<endl;
+    cout<<"String is :"<<c<<endl<<sizeof(c)<<endl;
+    cout<<"Bool value is :"<<MyBoolVar<<endl<<sizeof(MyBoolVar)<<endl;
+    
+    return 0;
+}
+/*     output: 
+        Integer value :10
+        the size of the integer is: 
+        4
+        Float Value is :10.5
+        4
+        Double value is :10.56
+        8
+        Char is :Ae vedya
+        8
+        String is :bat ka grip
+        32
+        Bool value is :1
+        1
+*/
+
+//2.
+/*PRN:22070123082
+#comparison of two numbers#                                    */
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num1,num2;
+    cout<<"enter number 1:"<<endl;
+    cin>>num1;
+    cout<<"enter number 2:"<<endl;
+    cin>>num2;
+    if(num1>num2)
+    {
+        cout<<"num1 is bigger"<<endl;
+    }
+    else if (num2>num1)
+    {
+        cout<<"num2 is bigger"<<endl;
+    }
+    else
+    {
+        cout<<"number are equal"<<endl;
+    }
+}
+/*
+Output:
+enter number 1:
+->2
+enter number 2:
+->3
+num2 is bigger
+*/
+
+//3.
+/*PRN:22070123082
+#Boolean Colour#                         */
+#include<iostream>
+using namespace std;
+int main()
+{
+    bool imagecolor=true;     //stating the condition
+    if(imagecolor)
+    {
+        cout<<"yes the image is colourful"<<endl;
+    }
+    else
+    {
+        cout<<"image is black and white"<<endl;
+    }
+}
+//output: yes the image is colourful
